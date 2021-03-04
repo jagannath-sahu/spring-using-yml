@@ -34,12 +34,12 @@ public class Config implements InitializingBean{
         this.hosts = hosts;
     }
 
-	@Override
-	public String toString() {
-		return "Config [environment=" + environment + ", hosts=" + hosts + "]";
-	}
+    @Override
+    public String toString() {
+	return "Config [environment=" + environment + ", hosts=" + hosts + "]";
+    }
 
-	@Override
+    @Override
     public void afterPropertiesSet() {
 
         final List<String> messages = new ArrayList<>(4);
